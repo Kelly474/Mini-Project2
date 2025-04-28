@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, sans-serif;
+}
+
+.mkt-banner {
+    display: block;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+.description {
+  text-align: center;
+  padding-bottom: 20px;
+
+}
+
+.reg-btn {
+    cursor: pointer;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.icons {
+    width: 10%;
+}
+
+.header, .footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.footer{
+    margin-top: 20px;
+}
+
+/* Three column layout*/
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.column {
+    flex: 1;
+    min-width: 250px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 5%;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px)  {
+    .main-content {
+        flex-direction: column;
+    }
+
+    .column {
+       width: 100%; 
+    }
+}
